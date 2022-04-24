@@ -20,8 +20,8 @@ ul {
 }
 
 body {
-  background-color: #fff;
-  font-family: 'Nunito', sans-serif;
+  background-color: #253053;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   min-height: 100vh;
   display: flex;
@@ -35,3 +35,19 @@ main {
 html {
   scroll-behavior: smooth;
 }
+
+.site-left {
+  width: 17%;
+  height: 100vh;
+}
+
+.site-right {
+  width: 83%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.none {
+  display: none;
+}
+

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/blocks/add-new.scss"
+    ],
+    "names": [],
+    "file": "add-new.min.css"
+}

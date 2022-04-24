@@ -5,35 +5,168 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>New Employee</title>
+
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
+  <div class="d-flex">
 
-  <!-- HEADER PART -->
+    <div class="site-left">
 
-  <header class="">
-    <section class="">
+    </div>
+    <div class="site-right">
 
-    </section>
-  </header>
+      <!-- HEADER PART -->
+      <header class="header d-flex justify-content-between align-items-center">
+        <div class="header__searchbox d-flex align-items-center">
+          <i class="bx bx-search header__sicon"></i>
+          <input class="header__search" type="text" placeholder="Search topics">
+        </div>
 
-  <!-- MAIN PART  -->
+        <div class="header__box d-flex">
+          <button class="header__btn"><i class='bx bx-bell header__icon'></i><span
+              class="header__btnspan">4</span></button>
+          <button class="header__btn"><i class='bx bx-message header__icon'></i><span
+              class="header__btnspanb">3</span></button>
+          <button class="header__btn"><i class='bx bx-power-off header__icon'></i></button>
+        </div>
+      </header>
 
-  <main>
+      <section class="hero d-flex">
+        <div class="hero__box d-flex justify-content-center align-items-center">
+          <i class='bx bxs-group hero__icon'></i>
+        </div>
+        <div class="d-flex flex-column ps-5">
+          <h2 class="hero__title">New Employee</h2>
+          <p class="hero__text">Form design with validation</p>
+        </div>
+      </section>
+      <!-- MAIN PART  -->
 
-  </main>
+      <main>
+        <section class="list">
+          <div class="list__main">
+            <div class="list__box d-flex justify-content-between">
+              <label class="list__label" for="lsearch">
+                <i class="bx bx-search list__sicon"></i>
+                <input class="list__search" id="search" type="text" placeholder="Search Employees">
+              </label>
 
-  <!-- FOOTER PART  -->
+              <button class="d-flex align-items-center list__addbtn" id="addnewbtn"><i class="bx bx-plus list__picon"></i> Add New</button>
+            </div>
 
-  <footer class="footer">
+            <table class="list__tabel">
+              <thead class="list__thead">
+                <tr class="list__tr">
+                  <th class="list__th"><button class="list__thbtn" id="namebtn">Employee Name <i class='bx bx-arrow-from-bottom list__ticon' id="nameicon"></i></button></th>
+                  <th class="list__th"><button class="list__thbtn" id="mailbtn">Email Address (Personal) <i class='bx bx-arrow-from-bottom list__ticon' id="mailicon"></i></button></th>
+                  <th class="list__th"><button class="list__thbtn" id="numbtn">Mobile Number <i class='bx bx-arrow-from-bottom list__ticon' id="numicon"></i></button></th>
+                  <th class="list__th"><button class="list__thbtn" id="depabtn">Department <i class='bx bx-arrow-from-bottom list__ticon' id="depaicon"></i></button></th>
+                  <th class="list__th"><button class="list__thbtn">Actions </button></th>
+                </tr>
+              </thead>
 
-  </footer>
+              <tbody class="list__body" id="tbody">
 
+              </tbody>
+
+            </table>
+
+          </div>
+        </section>
+
+      </main>
+
+      <!-- FOOTER PART  -->
+
+      <footer class="footer">
+
+      </footer>
+    </div>
+  </div>
+
+  <!-- ADD Employee From -->
+
+  <section class="add" id="addbox">
+    <div class="add__main">
+      <div class="add__header d-flex justify-content-between align-items-center">
+        <h2 class="add__title">Employee From</h2>
+        <button class="list__xbtn" id="addxbtn"><i class="bx bx-x "></i></button>
+      </div>
+      <form class="add__form d-flex flex-wrap" action="" id="form">
+
+        <div class="col-6">
+          <label class="add__label" for="name">
+            <input class="add__input" type="text" id="name" placeholder="Full Name">
+            <span class="add__err" id="nameerr"></span>
+          </label>
+          <label class="add__label" for="email">
+            <input class="add__input" type="text" id="email" placeholder="Email">
+            <span class="add__err" id=""></span>
+          </label>
+          <label class="add__label" for="number">
+            <input class="add__input" type="number" id="number" placeholder="Mobile">
+            <span class="add__err" id=""></span>
+          </label>
+          <label class="add__label" for="city">
+            <input class="add__input" type="text" id="city" placeholder="City">
+            <span class="add__err" id=""></span>
+          </label>
+        </div>
+
+        <div class="col-6">
+          <div class="add__gender">
+            <p class="add__name">Gender</p>
+            <div class="d-flex align-items-center">
+              <input class="add__radio" type="radio" id="male" name="gender" value="male" checked>
+              <label class="add__label" for="male">Male</label>
+              <input class="add__radio" type="radio" id="female" name="gender" value="female">
+              <label class="add__label" for="female">Female</label>
+              <input class="add__radio" type="radio" id="other" name="gender" value="other">
+              <label class="add__label" for="other">Other</label>
+            </div>
+          </div>
+          <label class="add__label" for="depa">
+            <select class="add__input" name="" id="depa">
+              <option value=""></option>
+              <option value="None">None</option>
+              <option value="Development">Development</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Accounting">Accounting</option>
+              <option value="Hr">Hr</option>
+            </select>
+          </label>
+          <label class="add__label" for="data">
+            <input class="add__input" type="date" id="data" placeholder="Apr/22/2022">
+          </label>
+          <div class="d-flex align-items-center ps-2 pt-3 pb-3">
+            <input type="checkbox" id="check" name="check" value="check">
+            <label class="add__check" for="check"> Permanent Employee</label><br>
+          </div>
+          <div class="d-flex pt-2 pb-2">
+            <button class="add__submit" type="submit">Submit</button>
+            <button class="add__reset" type="button" id="reset">Reset</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="add" id="edit">
+
+  </section>
+  <script src="js/search.js"></script>
+  <script src="js/edit.js"></script>
+  <script src="js/delete.js"></script>
+  <script src="js/mysql.js"></script>
+  <script src="js/addnew.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/sort.js"></script>
 </body>
-
 </html>
