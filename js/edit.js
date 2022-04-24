@@ -76,10 +76,11 @@ function edite(id) {
       let u = document.querySelector('#editform')
       document.querySelector('#editaddxbtn').addEventListener('click', (e) => {
         elEdit.style.display = 'none'
+
       })
 
       document.querySelector('#editReset').addEventListener('click', (e) => {
-         //Input
+        //Input
         document.querySelector('#editname').value = null
         document.querySelector('#editemail').value = null
         document.querySelector('#editnumber').value = null
@@ -97,7 +98,7 @@ function edite(id) {
 function editForm(ue, items) {
   ue.addEventListener('submit', (e) => {
     e.preventDefault()
-    console.log('salom')
+
 
     //Input
     let elInName = document.querySelector('#editname')

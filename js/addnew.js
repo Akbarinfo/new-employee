@@ -42,10 +42,11 @@ elAddXbtn.addEventListener('click', () => {
   elAddBox.style.display = 'none'
 })
 
-let count = 2
+let count = 4
 
 elForm.addEventListener('submit', (e) => {
   e.preventDefault()
+
   elAddBox.style.display = 'none'
 
   mysql.push(
@@ -61,7 +62,6 @@ elForm.addEventListener('submit', (e) => {
   )
   addInfo()
   count++;
-  console.log(mysql)
 })
 
 elReset.addEventListener('click', () => {
