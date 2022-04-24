@@ -44,7 +44,6 @@ elName.addEventListener('click', () => {
       return 0;
     })
     addInfo()
-
   }
 })
 

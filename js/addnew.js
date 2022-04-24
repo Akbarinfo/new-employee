@@ -9,22 +9,12 @@ let elInName = document.querySelector('#name')
 let elInEmail = document.querySelector('#email')
 let elInNumber = document.querySelector('#number')
 let elInCity = document.querySelector('#city')
-// let elInGender = document.querySelector('#')
 let elInDepa = document.querySelector('#depa')
 let elInData = document.querySelector('#data')
 
-
-//error
-let NameErr = document.querySelector('#nameerr')
-// let NameErr = document.querySelector('#')
-// let NameErr = document.querySelector('#')
-// let NameErr = document.querySelector('#')
-// let NameErr = document.querySelector('#')
-// let NameErr = document.querySelector('#')
-
+// elInData.value = 
 
 //createElements
-
 function createElements(...arr) {
   return arr.map(item => {
     return document.createElement(item)
@@ -64,6 +54,8 @@ elForm.addEventListener('submit', (e) => {
   count++;
 })
 
+
+//Form clear
 elReset.addEventListener('click', () => {
   elInName.value = null
   elInEmail.value = null

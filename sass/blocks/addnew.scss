@@ -120,6 +120,40 @@
       background-color: #d5d5d5;
     }
   }
+
+  &__checke {
+    border-color: #333996;
+  }
+
+  &__errchecke {
+    color: #333996;
+  }
+
+  &__bag {
+    border-color: #f44336;
+    outline-color: #f44336;
+
+    &:focus {
+      border-color: #f44336;
+      outline-color: #f44336;
+    }
+
+    &:hover {
+      border-color: #f44336;
+      outline-color: #f44336;
+    }
+  }
+
+  &__err {
+    font-size: 12px;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    color: #f44336;
+    padding-top: 3px;
+    margin: 0 14px;
+  }
+
+
 }
 
 select {

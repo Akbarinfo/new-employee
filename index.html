@@ -107,11 +107,11 @@
           </label>
           <label class="add__label" for="email">
             <input class="add__input" type="text" id="email" placeholder="Email">
-            <span class="add__err" id=""></span>
+            <span class="add__err" id="mailerr"></span>
           </label>
           <label class="add__label" for="number">
-            <input class="add__input" type="number" id="number" placeholder="Mobile">
-            <span class="add__err" id=""></span>
+            <input class="add__input" type="text" id="number" maxlength="13" placeholder="Mobile">
+            <span class="add__err" id="numerr"></span>
           </label>
           <label class="add__label" for="city">
             <input class="add__input" type="text" id="city" placeholder="City">
@@ -134,22 +134,22 @@
           <label class="add__label" for="depa">
             <select class="add__input" name="" id="depa">
               <option value=""></option>
-              <option value="None">None</option>
               <option value="Development">Development</option>
               <option value="Marketing">Marketing</option>
               <option value="Accounting">Accounting</option>
               <option value="Hr">Hr</option>
             </select>
+            <span class="add__err" id="depaerr"></span>
           </label>
           <label class="add__label" for="data">
-            <input class="add__input" type="date" id="data" placeholder="Apr/22/2022">
+            <input class="add__input" type="date" id="data" value="04-25-2022">
           </label>
           <div class="d-flex align-items-center ps-2 pt-3 pb-3">
             <input type="checkbox" id="check" name="check" value="check">
             <label class="add__check" for="check"> Permanent Employee</label><br>
           </div>
           <div class="d-flex pt-2 pb-2">
-            <button class="add__submit" type="submit">Submit</button>
+            <button class="add__submit" type="submit" id="addbtn" disabled>Submit</button>
             <button class="add__reset" type="button" id="reset">Reset</button>
           </div>
 
@@ -161,11 +161,13 @@
   <section class="add" id="edit">
 
   </section>
+
   <script src="js/search.js"></script>
   <script src="js/edit.js"></script>
   <script src="js/delete.js"></script>
   <script src="js/mysql.js"></script>
   <script src="js/addnew.js"></script>
+  <script src="js/validator.js"></script>
   <script src="js/main.js"></script>
   <script src="js/sort.js"></script>
 </body>

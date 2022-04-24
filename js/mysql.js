@@ -3,9 +3,9 @@
 let mysql = [
   {
     id: 1,
-    name: "eshmat",
-    email: "esmat@mail",
-    number: 99642121,
+    name: "Eshmatboy",
+    email: "eshmatjon@mail.ru",
+    number: "+998901234567",
     city: "Toshkent",
     depa: 'Marketing',
     data: '2022-04-22'
@@ -13,18 +13,18 @@ let mysql = [
 
   {
   id: 2,
-  name: "ashmat",
-  email: "dsmat@mail",
-  number: 99892121,
-  depa: 'Alkash',
+  name: "Toshmat",
+  email: "toshmat@gamil.com",
+  number: "+998992221133",
+  depa: 'Development',
   data: '22-04-22'
 },
 
 {
   id: 3,
-  name: "bshmat",
-  email: "hsmat@mail",
-  number: 99123212,
+  name: "Raisbuva",
+  email: "raisbuva777@mail.ru",
+  number: '+998937771585',
   depa: 'Hr',
   data: '22-04-22'
 },

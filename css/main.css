@@ -508,6 +508,38 @@ html {
   background-color: #d5d5d5;
 }
 
+.add__checke {
+  border-color: #333996;
+}
+
+.add__errcheck {
+  color: #333996;
+}
+
+.add__bag {
+  border-color: #f44336;
+  outline-color: #f44336;
+}
+
+.add__bag:focus {
+  border-color: #f44336;
+  outline-color: #f44336;
+}
+
+.add__bag:hover {
+  border-color: #f44336;
+  outline-color: #f44336;
+}
+
+.add__err {
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0.03333em;
+  color: #f44336;
+  padding-top: 3px;
+  margin: 0 14px;
+}
+
 select {
   background-color: #fff;
 }
