@@ -9,5 +9,8 @@ elSearch.addEventListener('keyup', (e) => {
     if(item.name.includes(key)) {
       addInfoDisplay(item)
     }
+    if(elSearch.value == 0) {
+      addInfo()
+    }
   })
 })
