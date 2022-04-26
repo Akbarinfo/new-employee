@@ -27,7 +27,7 @@ function edite(id) {
             <span class="add__err" id=""></span>
           </label>
           <label class="add__label" for="editnumber">
-            <input class="add__input" value="${items.number}" type="number" id="editnumber" placeholder="Mobile">
+            <input class="add__input" value="${items.number}" type="text" id="editnumber" placeholder="Mobile">
             <span class="add__err" id=""></span>
           </label>
           <label class="add__label" for="editcity">
