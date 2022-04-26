@@ -12,7 +12,7 @@ let elInCity = document.querySelector('#city')
 let elInDepa = document.querySelector('#depa')
 let elInData = document.querySelector('#data')
 
-// elInData.value = 
+elInData.value = '04/25/2022'
 
 //createElements
 function createElements(...arr) {
@@ -52,6 +52,13 @@ elForm.addEventListener('submit', (e) => {
   )
   addInfo()
   count++;
+
+  elInName.value = null
+  elInEmail.value = null
+  elInNumber.value = null
+  elInCity.value = null
+  elInData.value = null
+  elInDepa.value = null
 })
 
 
