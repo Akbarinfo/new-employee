@@ -12,39 +12,20 @@ let mysql = [
   },
 
   {
-  id: 2,
-  name: "Toshmat",
-  email: "toshmat@gamil.com",
-  number: "+998992221133",
-  depa: 'Development',
-  data: '22-04-22'
-},
+    id: 2,
+    name: "Toshmat",
+    email: "toshmat@gamil.com",
+    number: "+998992221133",
+    depa: 'Development',
+    data: '22-04-22'
+  },
 
-{
-  id: 3,
-  name: "Raisbuva",
-  email: "raisbuva777@mail.ru",
-  number: '+998937771585',
-  depa: 'Hr',
-  data: '22-04-22'
-},
+  {
+    id: 3,
+    name: "Raisbuva",
+    email: "raisbuva777@mail.ru",
+    number: '+998937771585',
+    depa: 'Hr',
+    data: '22-04-22'
+  },
 ]
-
-
-// {
-//   id: 2,
-//   name: "eshmat",
-//   email: "esmat@mail",
-//   number: 9952121,
-//   depa: 'Marketing',
-//   data: '22-04-22'
-// },
-
-// {
-//   id: 3,
-//   name: "eshmat",
-//   email: "esmat@mail",
-//   number: 9952121,
-//   depa: 'Marketing',
-//   data: '22-04-22'
-// },
